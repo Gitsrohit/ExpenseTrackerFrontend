@@ -24,20 +24,18 @@ function Navigation({ active, setActive }) {
                     </p>
                 </div>
             </div>
-            <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-                <FaBars />
-            </div>
-            <ul className={`menu-items ${menuOpen ? 'open' : ''}`}>
-                {menuItems.map((item) => (
-                    <li
+            
+            <ul className="menu-items">
+                {menuItems.map((item) => {
+                    return <li
                         key={item.id}
                         onClick={() => setActive(item.id)}
-                        className={active === item.id ? 'active' : ''}
+                        className={active === item.id ? 'active': ''}
                     >
                         {item.icon}
                         <span>{item.title}</span>
                     </li>
-                ))}
+                })}
             </ul>
             <div className="bottom-nav">
                 <li>
