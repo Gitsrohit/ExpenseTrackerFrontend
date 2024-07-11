@@ -54,7 +54,7 @@ const AppStyled = styled.div`
   position: relative;
   main{
     flex: 1;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,72,123,1) 100%);
+    // background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,72,123,1) 100%);
     border: 0.5px solid #FFFFFF;
     backdrop-filter: blur(4.5px);
     border-radius: 32px;
