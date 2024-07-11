@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import avatar from '../../img/avatar.png'
 import { rupees, signout } from '../../utils/Icons'
 import { menuItems } from '../../utils/menuItems'
-import { FaBars } from 'react-icons/fa';
 import { useGlobalContext } from '../../context/globalContext';
 
 function Navigation({ active, setActive }) {
